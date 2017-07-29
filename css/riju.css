@@ -1,0 +1,137 @@
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+body a:hover {
+    text-decoration: none;
+}
+body a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.slideanim {}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;    
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+    visibility: visible;          
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }  
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+ul.social {
+  margin: 9em 0 0 0;
+  padding: 0;
+}
+ul.social li {
+    display:inline-block;
+}
+
+ul.social {
+        margin-top: 7.5em;
+    }
+.social {
+    text-align: center;
+}
+.footer ul.social {
+    margin-top: 30px;
+}
+ul.social li {
+    display: inline-block;
+}
+ul.social li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background:url(../images/img-sprite.png) no-repeat 0px 0px;
+}
+ul.social li a.facebook {
+    background-position: 0px 0px;
+}
+ul.social li a.facebook:hover {
+    background-position: 0px -50px;
+}
+ul.social li a.twitter {
+    background-position: -50px 0px;
+}
+ul.social li a.twitter:hover {
+    background-position: -50px -50px;
+}
+ul.social li a.googleplus {
+    background-position: -100px 0px;
+}
+ul.social li a.googleplus:hover {
+    background-position: -100px -50px;
+}
+ul.social li a.instagram {
+    background-position: -150px 0px;
+}
+ul.social li a.instagram:hover {
+    background-position: -150px -50px;
+}
+ul.social li a.youtube {
+    background-position: -200px 0px;
+}
+ul.social li a.youtube:hover {
+    background-position: -200px -50px;
+}
+@media screen and (max-width:568px) {
+    .social {
+        padding-top: 10px;
+    }
+    ul.social li a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background:url(images/img-sprite.png) no-repeat 0px 0px;
+        background-size: 200px;
+    }
+    ul.social li a.twitter {
+        background-position: -35px 0px;
+    }
+    ul.social li a.twitter:hover {
+        background-position: -34px -33px;
+    }
+    ul.social li a.googleplus {
+        background-position: -69px 0px;
+    }
+    ul.social li a.googleplus:hover {
+        background-position: -68px -34px;
+    }
+    ul.social li a.instagram {
+        background-position: -102px 0px;
+    }
+    ul.social li a.instagram:hover {
+        background-position: -102px -35px;
+    }
+    ul.social li a.youtube {
+        background-position: -135px 0px;
+    }
+    ul.social li a.youtube:hover {
+        background-position: -135px -33px;
+    }
+}
